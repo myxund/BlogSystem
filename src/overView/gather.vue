@@ -16,6 +16,9 @@
 <script lang="ts" setup>
 import { overLink } from '../utils/menu';
 import { overview } from '../mock/data'
+
+//获取数据
+
 </script>
 
 <style lang="less" scoped>
