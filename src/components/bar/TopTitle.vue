@@ -1,5 +1,5 @@
 <template>
-<yk-space>
+<yk-space class="TopTitle">
     <yk-title class="name">汇总</yk-title>
 </yk-space>
 </template>
@@ -9,12 +9,14 @@
 </script>
 
 <style lang="less" scoped>
-.name {
+.TopTitle{
+    width: 100%;
+    .name {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: #111827;
-    margin-left: 16px;
-    margin-top: 16px;
+
+}
 }
 </style>
