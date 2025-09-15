@@ -50,11 +50,11 @@ import { navLinks } from '../../utils/menu';
     background: linear-gradient(180deg, #2b5aedcc 0%, #2B5AED 100%);
 
     .yk-icon {
-      color: @bg-color-l;
+      color: @white;
     }
 
     .yk-text {
-      color: @bg-color-l;
+      color: @white;
       font-weight: 600;
     }
   }
