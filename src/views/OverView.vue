@@ -4,9 +4,7 @@
         <gather />
         <yk-space style="width: 100%;">
             <datas />
-            <div style="background-color: #fff;height: 30px;">
-                评论
-            </div>
+            <comment style="width: 50%;" height="515px" :pageSize="8" />
         </yk-space>
     </yk-space>
 </template>
@@ -16,6 +14,7 @@
 import TopTitle from '../components/bar/TopTitle.vue';
 import gather from '../overView/gather.vue'
 import datas from '../overView/datas.vue'
+import { comment } from '../components/reply'
 </script>
 
 

@@ -14,7 +14,7 @@ export const overview = Mock.mock({
 
 // 访问量
 export const visit = Mock.mock({
-  "data|30" :[{
+  "data|30": [{
     //time
     "date": "@datetime('MM-dd')",
     "count|10-100": 12,
@@ -23,30 +23,52 @@ export const visit = Mock.mock({
 
 //数据监测
 export const survey = Mock.mock({
-  "data":{
-    "device":[
+  "data": {
+    "device": [
       {
-        "key":'mobile',
+        "key": 'mobile',
         "name": '移动端',
         "value|30-120": 50
       },
       {
-        "key":'pc',
+        "key": 'pc',
         "name": '桌面端',
         "value|30-120": 40
       }
     ],
     "website": [
       {
-        "key":'home',
+        "key": 'home',
         "name": '首页',
         "value|30-120": 50
       },
       {
-        "key":'project',
+        "key": 'project',
         "name": '项目',
         "value|30-120": 40
       },
     ]
   },
+})
+
+//评论
+export const comment = Mock.mock({
+  "data|123": {
+    "count": 123,
+    "list|123": [{
+      "id|+1": 0,
+      "article":{
+        "id|+1": 2,
+        "name": "@ctitle(3,12)",
+      },
+      "user": {
+      "id|+1": 3,
+      "name": "@ctitle(2,12)",
+      "imgurl":"https://www.huohuo90.com:3003/user/6353b034dd4b583975e77fbe.png"
+      },
+      "comment": "@cparagraph(1,4)",
+      "moment":"@datetime()",
+      "complaint|0-5": 0
+    }]
+  }
 })
